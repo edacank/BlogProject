@@ -1,0 +1,66 @@
+﻿@model Registration
+@{
+    ViewData["Title"] = "Registration Page";
+}
+
+<div class="text-center" asp-validation-summary="All"></div>
+    <h1 class="display-4">Register Here</h1>
+
+
+<form>
+    <div class="form-group">
+            <label asp-for=Name> </label>
+            <input asp-for="Name" />
+    </div><br />
+    <div class="form-group">
+        <label asp-for=Surname> </label>
+        <input asp-for="Surname" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for=Email> </label>
+        <input asp-for="Email" />
+
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for=Email> </label>
+        <input asp-for="Email" />
+
+    </div><br />
+    <div class="form-group">
+        <label asp-for=Phone> </label>
+        <input asp-for="Phone" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for=Password> </label>
+        <input asp-for="Password" />
+    </div><br />
+    <div class="form-group">
+        <label asp-for=Password> </label>
+        <input asp-for="Password" />
+    </div><br />
+    <div class="form-check">
+      
+        <input class="form-check-input" type="checkbox" value="" id="1">
+        <label class="form-check-label" for="painting">
+            Painting
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="2" checked>
+        <label class="form-check-label" for="Gardening">
+            Gardening
+        </label>
+    </div>
+    <div class="form-group">
+        <br />
+        <p>I would like to get sms notifications.</p>
+        <input type="checkbox" />
+    </div>
+    
+    <button type="submit" class="btn btn-primary" >Register</button>
+</form>
+
+    

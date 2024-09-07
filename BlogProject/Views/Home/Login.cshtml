@@ -1,0 +1,25 @@
+﻿@model Login
+
+@{
+    ViewData["Title"] = "Login Page";
+}
+<div class="text-center" asp-validation-summary="All"></div>
+    <h1>Login Here</h1>
+
+    <form>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email"/>
+        </div><br />
+   
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password"/>
+
+        </div><br />
+        <div class="form-group">
+            <p class="bg-primary text-white">Remember me?</p>
+            <input type="checkbox"/>
+        </div><br />
+        <button type="submit" class="btn btn-info">Login</button>
+    </form>
